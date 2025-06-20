@@ -1,0 +1,250 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.busqueda {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.busqueda input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.busqueda input:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+.busqueda button {
+    padding: 12px 24px;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.busqueda button:hover {
+    background: #005fa3;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.busqueda-fechas-bar {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.busqueda-fechas-bar label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 4px;
+}
+
+.busqueda-fechas-bar input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.busqueda-fechas-bar input[type="date"]:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+.busqueda-fechas-bar button {
+    padding: 12px 24px;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.busqueda-fechas-bar button:hover {
+    background: #005fa3;
+    transform: translateY(-2px) scale(1.03);
+}
+
+#resultados {
+    margin-top: 24px;
+}
+
+#resultadosFechas {
+    margin-top: 24px;
+}
+
+.resultado {
+    background: #f0f4fa;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+
+.resultado:hover {
+    box-shadow: 0 4px 16px rgba(0,120,215,0.10);
+}
+
+.tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.tabla-resultados th, .tabla-resultados td {
+    border: 1px solid #e0e6ed;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.tabla-resultados th {
+    background: #f0f4fa;
+    color: #222;
+    font-weight: 600;
+}
+
+.tabla-resultados tr:nth-child(even) {
+    background: #f9fbfd;
+}
+
+.tabla-resultados tr:hover {
+    background: #e6f0fa;
+    transition: background 0.2s;
+}
+
+/* Responsive vertical table for mobile (ajustado para estadisticas también) */
+@media (max-width: 700px) {
+    main {
+        padding: 12px 6vw;
+        margin: 16px 0;
+        border-radius: 12px;
+    }
+    .busqueda, .busqueda-fechas-bar {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+        padding: 0 4vw;
+    }
+    .busqueda input, .busqueda-fechas-bar input[type="date"] {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+    .busqueda button, .busqueda-fechas-bar button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+    .tabla-resultados, .tabla-resultados thead, .tabla-resultados tbody, .tabla-resultados tr {
+        display: block;
+        width: 100%;
+    }
+    .tabla-resultados {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        margin: 0 auto 24px auto;
+        padding: 12px 4vw;
+        max-width: 98vw;
+    }
+    .tabla-resultados thead {
+        display: none;
+    }
+    .tabla-resultados tr {
+        margin-bottom: 18px;
+        border-radius: 12px;
+        box-shadow: 0 1px 6px rgba(0,120,215,0.10);
+        background: #f7faff;
+        border: 1.5px solid #d0d8e0;
+        padding: 10px 0 10px 0;
+        overflow: hidden;
+    }
+    .tabla-resultados td {
+        display: flex;
+        width: 100%;
+        border: none;
+        border-bottom: 1.5px solid #e0e6ed;
+        padding: 12px 10px 12px 0;
+        font-size: 1rem;
+        align-items: center;
+        background: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .tabla-resultados td:before {
+        content: attr(data-label);
+        flex: 0 0 48%;
+        font-weight: 600;
+        color: #0078d7;
+        padding-right: 10px;
+        text-align: left;
+        font-size: 1em;
+        letter-spacing: 0.01em;
+    }
+    .tabla-resultados td:last-child {
+        border-bottom: none;
+    }
+    .tabla-resultados tr:not(:last-child) {
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 16px 4px;
+    }
+    .busqueda {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .tabla-resultados th, .tabla-resultados td {
+        font-size: 0.92rem;
+        padding: 6px 4px;
+    }
+}

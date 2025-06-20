@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Delegaciones</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tabla-resultados {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .tabla-resultados th, .tabla-resultados td {
+            border: 1px solid #888;
+            padding: 6px 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .tabla-resultados th {
+            background: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            .tabla-resultados th, .tabla-resultados td {
+                font-size: 12px;
+                padding: 4px 6px;
+            }
+        }
+        .btn-atras {
+            margin-bottom: 24px;
+            padding: 10px 24px;
+            background: #e0e6ed;
+            color: #222;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-atras:hover {
+            background: #b6c6d6;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button class="btn-atras" onclick="location.href='index.html'">&larr; Atrás</button>
+        <h1>Búsqueda de Delegaciones</h1>
+        <section class="busqueda">
+            <input type="text" id="busquedaInput" placeholder="Buscar por número o nombre...">
+            <button id="buscarBtn">Buscar</button>
+        </section>
+        <section id="resultados"></section>
+        <section id="busqueda-fechas"></section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="busqueda.js"></script>
+</body>
+</html>

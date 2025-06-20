@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-atras {
+            margin-bottom: 24px;
+            padding: 10px 24px;
+            background: #e0e6ed;
+            color: #222;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-atras:hover {
+            background: #b6c6d6;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <button class="btn-atras" onclick="location.href='index.html'">&larr; Atrás</button>
+        <h1>Estadísticas</h1>
+        <section id="estadisticas-contenido"></section>
+    </main>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="estadisticas.js"></script>
+</body>
+</html>

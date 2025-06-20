@@ -1,0 +1,121 @@
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 32px 18px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.busqueda-fechas-bar {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.busqueda-fechas-bar label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 4px;
+}
+
+.busqueda-fechas-bar input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.busqueda-fechas-bar input[type="date"]:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+.busqueda-fechas-bar button {
+    padding: 12px 24px;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.busqueda-fechas-bar button:hover {
+    background: #005fa3;
+    transform: translateY(-2px) scale(1.03);
+}
+
+#estadisticas-resultados {
+    margin-top: 24px;
+}
+
+/* Fuerza la tabla de estadísticas a ser horizontal SIEMPRE, incluso en móvil */
+.tabla-resultados,
+.tabla-resultados thead,
+.tabla-resultados tbody,
+.tabla-resultados tr,
+.tabla-resultados th,
+.tabla-resultados td {
+    display: table !important;
+    width: auto !important;
+    min-width: unset !important;
+    box-sizing: border-box;
+}
+
+.tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.tabla-resultados th, .tabla-resultados td {
+    border: 1px solid #e0e6ed;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.tabla-resultados th {
+    background: #f0f4fa;
+    color: #222;
+    font-weight: 600;
+}
+
+.tabla-resultados tr:nth-child(even) {
+    background: #f9fbfd;
+}
+
+.tabla-resultados tr:hover {
+    background: #e6f0fa;
+    transition: background 0.2s;
+}
+
+/* Elimina cualquier media query que haga la tabla vertical en móvil para esta tabla */
+@media (max-width: 700px) {
+    .tabla-resultados,
+    .tabla-resultados thead,
+    .tabla-resultados tbody,
+    .tabla-resultados tr,
+    .tabla-resultados th,
+    .tabla-resultados td {
+        display: table !important;
+        width: auto !important;
+        min-width: unset !important;
+    }
+}
