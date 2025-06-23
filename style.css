@@ -1,23 +1,32 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f7f7;
+    background: hsl(225, 40%, 98%);
     margin: 0;
     padding: 0;
 }
 
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-    padding: 32px 24px;
+    background: rgba(255,255,255,0.18);
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18), 0 1.5px 8px 0 rgba(31,38,135,0.10);
+    padding: 36px 28px;
+    backdrop-filter: blur(24px) saturate(180%) brightness(1.15);
+    -webkit-backdrop-filter: blur(24px) saturate(180%) brightness(1.15);
+    border: 2.5px solid rgba(255,255,255,0.32);
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(180,210,255,0.18) 100%);
+    transition: box-shadow 0.3s, background 0.3s;
+    overflow: hidden;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #222;
     margin-bottom: 32px;
+    font-size: 2rem;
+    text-shadow: 0 2px 8px rgba(31,38,135,0.08);
+    letter-spacing: 0.02em;
 }
 
 .busqueda {
