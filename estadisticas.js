@@ -1,5 +1,5 @@
-const SHEET_ID = "19eV5If38DRpX0utKbID2V_xZWaxnYi2g";
-const SHEET_NAME = "DELEGACIONES";
+const SHEET_ID = "1j52vjPyQi5algYyyFvZxNdVPXkpKpDRPamaPqGPMtAM";
+const SHEET_NAME = "FLAGRANCIA";
 // Si el archivo está en Google Drive como XLSX, pon aquí el enlace directo de descarga (.xlsx)
 // Si usas Google Sheets, usa la exportación:
 const PUBLIC_XLSX_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=xlsx&sheet=${SHEET_NAME}`;
