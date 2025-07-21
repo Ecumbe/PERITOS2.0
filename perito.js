@@ -1,5 +1,5 @@
 const SHEET_ID = "19eV5If38DRpX0utKbID2V_xZWaxnYi2g";
-const SHEET_NAME = "DELEGACIONES"; // Asegúrate de que este sea el nombre EXACTO de tu pestaña
+const SHEET_NAME = "FLAGRANCIA"; // Asegúrate de que este sea el nombre EXACTO de tu pestaña
 const PUBLIC_XLSX_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=xlsx&sheet=${SHEET_NAME}`;
 
 let datos = [];
