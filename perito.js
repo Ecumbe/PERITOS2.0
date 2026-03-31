@@ -1,4 +1,4 @@
-const SHEET_ID = "1j52vjPyQi5algYyyFvZxNdVPXkpKpDRPamaPqGPMtAM"; // Nuevo ID de la hoja de cálculo
+const SHEET_ID = "1BDARFxTvcEqzRYC-UygvK2zF0XkrcGy5qB7_ZubJAJA"; // Nuevo ID de la hoja de cálculo
 const SHEET_NAME = "FLAGRANCIA";  // Asegúrate de que este sea el nombre EXACTO de tu pestaña
 const PUBLIC_XLSX_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=xlsx&sheet=${SHEET_NAME}`;
 
