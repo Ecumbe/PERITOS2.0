@@ -1,4 +1,4 @@
-const SHEET_ID = "1j52vjPyQi5algYyyFvZxNdVPXkpKpDRPamaPqGPMtAM";
+const SHEET_ID = "1BDARFxTvcEqzRYC-UygvK2zF0XkrcGy5qB7_ZubJAJA";
 const SHEET_NAME = "FLAGRANCIA";
 // Si el archivo está en Google Drive como XLSX, pon aquí el enlace directo de descarga (.xlsx)
 // Si usas Google Sheets, usa la exportación:
