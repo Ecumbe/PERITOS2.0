@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Delegaciones</title>
+    <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+    <main class="calendar-main">
+        <button class="btn-atras" onclick="location.href='index.html'">&larr; Atras</button>
+
+        <h1>Calendario de Delegaciones</h1>
+
+        <section class="calendar-toolbar">
+            <div class="toolbar-group">
+                <label for="yearSelect">Ano</label>
+                <select id="yearSelect"></select>
+            </div>
+            <div class="toolbar-group">
+                <label for="monthSelect">Mes</label>
+                <select id="monthSelect">
+                    <option value="0">Enero</option>
+                    <option value="1">Febrero</option>
+                    <option value="2">Marzo</option>
+                    <option value="3">Abril</option>
+                    <option value="4">Mayo</option>
+                    <option value="5">Junio</option>
+                    <option value="6">Julio</option>
+                    <option value="7">Agosto</option>
+                    <option value="8">Septiembre</option>
+                    <option value="9">Octubre</option>
+                    <option value="10">Noviembre</option>
+                    <option value="11">Diciembre</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="calendar-card">
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </section>
+
+        <section class="month-summary" id="monthSummary">
+            <h2 id="monthSummaryTitle">Peritos y delegaciones del mes</h2>
+            <div class="month-summary-table-wrap">
+                <table class="month-summary-table">
+                    <thead>
+                        <tr>
+                            <th>Grado</th>
+                            <th>Perito</th>
+                            <th>Total Delegaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="monthSummaryBody">
+                        <tr>
+                            <td colspan="3">Cargando...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="audienciaModal" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="modalTitle">Audiencias del dia</h3>
+                <button id="modalCloseBtn" class="modal-close-btn" type="button">Cerrar</button>
+            </div>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js?v=20260402h"></script>
+    <script src="calendario.js?v=20260402h"></script>
+</body>
+</html>
